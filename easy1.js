@@ -16,10 +16,21 @@
 
 //2. Odd Numbers - Log all odd numbers from 1 to 99, inclusive, to the console, with each number 
 //on a separate line.
-let n  = 0;
-while (n < 100) {
-    if (n % 2 === 1) {
-        console.log(n);
-    }
-    n +=1;
+// let n  = 0;
+// while (n < 100) {
+//     if (n % 2 === 1) {
+//         console.log(n);
+//     }
+//     n +=1;
+// }
+
+//3. Even Numbers - Log all even numbers from 1 to 99, inclusive, to the console, with each number 
+//on a separate line.
+
+let numbers = 1;
+
+while (numbers < 100) {
+    if (numbers % 2 === 0){
+        console.log(numbers);
+    }numbers += 1;
 }
