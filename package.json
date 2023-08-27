@@ -1,0 +1,23 @@
+{
+  "name": "javascript_small_problems",
+  "version": "1.0.0",
+  "description": "Javascript small problems and solutions. Other programming languages can also be used.",
+  "main": "easy1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/247David/javascript_small_problems.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/247David/javascript_small_problems/issues"
+  },
+  "homepage": "https://github.com/247David/javascript_small_problems#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
