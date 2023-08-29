@@ -54,12 +54,39 @@
 // the total amount of the bill to the console. You can ignore input validation and assume
 // that the user will enter numbers.
 
+// const input = require('readline-sync');
+
+// let billAmount = Number(input.question('Enter bill amount:'));
+
+// let tipRate = Number(input.question('Enter tip rate(%):'));
+
+// let totalAmount = billAmount + (billAmount * (tipRate/100));
+
+// console.log(`Tip is: $${billAmount * (tipRate/100)} and the total bill is: $${totalAmount} `);
+
+//6. Sum or Product of Consecutive Integers - Write a program that asks the user to enter an integer greater 
+// than 0, then asks whether the user wants to determine the sum or the product of all numbers between 1 and 
+// the entered integer, inclusive.
+
 const input = require('readline-sync');
+let inputInteger = Number(input.question('Enter an integer greater than 0: '));
+let options = input.question('Sum - "s" or the product - "p" of between 1 and the entered integer inclusive: ');
+let result = 0;
+let productResult = 1;
+let tempInt = inputInteger;
+if (options === 's') {
+    while(inputInteger > 0) {
+        result += inputInteger;
+        inputInteger -= 1;
+    }
+    console.log(`The sum of the integers between 1 and ${tempInt} is ${result}`);
+} else {
+    while(inputInteger > 0) {
+        productResult *= inputInteger;
 
-let billAmount = Number(input.question('Enter bill amount:'));
+        inputInteger -= 1;
+    }
 
-let tipRate = Number(input.question('Enter tip rate(%):'));
+    console.log(`The product of the integers between 1 and ${tempInt} is ${productResult}`);
 
-let totalAmount = billAmount + (billAmount * (tipRate/100));
-
-console.log(`Tip is: ${billAmount * (tipRate/100)} and the total bill is: ${totalAmount} `);
+}
