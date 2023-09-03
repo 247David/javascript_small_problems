@@ -68,25 +68,52 @@
 // than 0, then asks whether the user wants to determine the sum or the product of all numbers between 1 and 
 // the entered integer, inclusive.
 
-const input = require('readline-sync');
-let inputInteger = Number(input.question('Enter an integer greater than 0: '));
-let options = input.question('Sum - "s" or the product - "p" of between 1 and the entered integer inclusive: ');
-let result = 0;
-let productResult = 1;
-let tempInt = inputInteger;
-if (options === 's') {
-    while(inputInteger > 0) {
-        result += inputInteger;
-        inputInteger -= 1;
+// const input = require('readline-sync');
+// let inputInteger = Number(input.question('Enter an integer greater than 0: '));
+// let options = input.question('Sum - "s" or the product - "p" of between 1 and the entered integer inclusive: ');
+// let result = 0;
+// let productResult = 1;
+// let tempInt = inputInteger;
+// if (options === 's') {
+//     while(inputInteger > 0) {
+//         result += inputInteger;
+//         inputInteger -= 1;
+//     }
+//     console.log(`The sum of the integers between 1 and ${tempInt} is ${result}`);
+// } else {
+//     while(inputInteger > 0) {
+//         productResult *= inputInteger;
+
+//         inputInteger -= 1;
+//     }
+
+//     console.log(`The product of the integers between 1 and ${tempInt} is ${productResult}`);
+
+// }
+
+//7. Short Long Short - Write a function that takes two strings as arguments, determines the length 
+// of the two strings, and then returns the result of concatenating the shorter string, the longer string, 
+// and the shorter string once again. You may assume that the strings are of different lengths.
+// shortLongShort('abc', 'defgh');    // "abcdefghabc"
+// shortLongShort('abcde', 'fgh');    // "fghabcdefgh"
+// shortLongShort('', 'xyz');         // "xyz"
+
+let shortLongShort = function (inputString1,inputString2) {
+    if(inputString1.length > inputString2.length) {
+        return inputString2 + inputString1 + inputString2;
+    } else{
+        return inputString1 + inputString2 + inputString1;
     }
-    console.log(`The sum of the integers between 1 and ${tempInt} is ${result}`);
-} else {
-    while(inputInteger > 0) {
-        productResult *= inputInteger;
-
-        inputInteger -= 1;
-    }
-
-    console.log(`The product of the integers between 1 and ${tempInt} is ${productResult}`);
-
 }
+// console.log(shortLongShort('abc', 'defgh'));
+// console.log(shortLongShort('abcde', 'fgh'));
+// console.log(shortLongShort('', 'xyz'));
+
+//8. Leap Years (Part 1) - In the modern era under the Gregorian Calendar, leap years occur in every 
+//year that is evenly divisible by 4, unless the year is also divisible by 100. If the year is evenly 
+//divisible by 100, then it is not a leap year, unless the year is also evenly divisible by 400.
+//Assume this rule is valid for any year greater than year 0. Write a function that takes any year greater 
+//than 0 as input and returns true if the year is a leap year, or false if it is not a leap year.
+// isLeapYear(2016);      // true
+
+
