@@ -145,8 +145,49 @@
 //10. When Will I Retire? - Build a program that logs when the user will retire and how many more years the 
 //user has to work until retirement.
 
-let prompt = require('readline-sync');
-let age = Number(prompt.question('What is your age? '));
-let retireAge = Number(prompt.question('At what age would you like to retire? '));
-console.log(`It's 2023. You will retire in ${2023 + (retireAge - age)}.`);
-console.log(`You have only ${retireAge - age} years to go!`);
+// let prompt = require('readline-sync');
+// let age = Number(prompt.question('What is your age? '));
+// let retireAge = Number(prompt.question('At what age would you like to retire? '));
+// console.log(`It's 2023. You will retire in ${2023 + (retireAge - age)}.`);
+// console.log(`You have only ${retireAge - age} years to go!`);
+
+// 11. Get Middle Character - Write a function that takes a non-empty string argument and returns the middle 
+//character(s) of the string. If the string has an odd length, you should return exactly one character. 
+//If the string has an even length, you should return exactly two characters.
+//Example
+// centerOf('I Love JavaScript'); // "a"
+// centerOf('Launch School');     // " "
+// centerOf('Launch');            // "un"
+// centerOf('Launchschool');      // "hs"
+// centerOf('x');                 // "x"
+
+// let centerOf = function (stringInput) {
+//   if (stringInput === undefined || typeof stringInput !== 'string' || stringInput.length === 0){
+//     console.log('Function needs a non empty string input.');
+//     return;
+//   } else if(stringInput.length % 2 === 0 && stringInput.length > 1){
+//       return stringInput[stringInput.length/2 - 1] + stringInput[stringInput.length/2];
+//   }else if(stringInput.length === 1){
+//       return stringInput;
+//   }return stringInput[Math.floor(stringInput.length/2)];
+
+// };
+// console.log(centerOf('I Love JavaScript')); // "a"
+// console.log(centerOf('Launch School'));     // " "
+// console.log(centerOf('Launch'));            // "un"
+// console.log(centerOf('Launchschool'));      // "hs"
+// console.log(centerOf('x'));                 // "x"
+
+// 12. Always Return Negative - Write a function that takes a number as an argument. If the argument is a 
+//positive number, return the negative of that number. If the argument is a negative number, return it as-is.
+//Example:
+// negative(5);     // -5
+// negative(-3);    // -3
+// negative(0);     // -0
+
+function negative(numb){
+  return Math.abs(numb) * -1;
+}
+console.log(negative(5));     // -5
+console.log(negative(-3));    // -3
+console.log(negative(0));     // -0
