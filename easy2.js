@@ -141,3 +141,12 @@
 
 // It's 2017. You will retire in 2057.
 // You have only 40 years of work to go!
+
+//10. When Will I Retire? - Build a program that logs when the user will retire and how many more years the 
+//user has to work until retirement.
+
+let prompt = require('readline-sync');
+let age = Number(prompt.question('What is your age? '));
+let retireAge = Number(prompt.question('At what age would you like to retire? '));
+console.log(`It's 2023. You will retire in ${2023 + (retireAge - age)}.`);
+console.log(`You have only ${retireAge - age} years to go!`);
