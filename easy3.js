@@ -53,6 +53,27 @@
 //  console.log(logInBox(''));
 //  console.log(logInBox('To boldly go where no one has gone before.'));
 
-//3. Stringy Strings - Write a function that takes one argument, a positive integer, and returns a string of alternating '1's and '0's, always starting with a '1'. The length of the string should match the given integer.
+//3. Stringy Strings - Write a function that takes one argument, a positive integer, and returns a string 
+//of alternating '1's and '0's, always starting with a '1'. The length of the string should match the given 
+//integer
+//output: 
+// stringy(6);    // "101010"
+// stringy(9);    // "101010101"
+// stringy(4);    // "1010"
+// stringy(7);    // "1010101"
 
+// let stringy = function (positiveInt){
+//    let altString = '';
+//    let count = 0;
+//     while(count < positiveInt) {
+//         if(count % 2 === 0){
+//             altString += 1;
+            
+//         }else {
+//             altString += 0;
+//         } count +=1;
+//     }
+//     return altString;
+// };
 
+// console.log(stringy(9));
