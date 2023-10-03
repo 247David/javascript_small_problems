@@ -90,13 +90,52 @@
 //  ****
 // *****
 
-let triangle = function(triangleSize){
-    for(let i = 0; i < triangleSize; i++) {
-        for (let j = 0; j<= i; j++){
-            process.stdout.write('*');
-        }
-        process.stdout.write('\n');
-    }
-};
+// let triangle = function(triangleSize){
+//     for(let row = 1; row <= triangleSize; row++) {
+//         for (let column = row; column <= triangleSize; column++){
+//             process.stdout.write(' ');
+//         }
+//         for (let column = 1; column <= row; column++){
+//             process.stdout.write('*');
+//         }
+//         process.stdout.write('\n');
+//     }
+// };
 
-triangle(4);
+// triangle(9);
+
+//5. Madlibs - Madlibs is a simple game where you create a story template with "blanks" for words. 
+//You, or another player, then construct a list of words and place them into the story, creating an
+// often silly or funny story as a result
+
+// let madLibs = function (){
+//     let inputString = require('readline-sync');
+//     let noun = inputString.question('Enter a noun: ');
+//     let verb = inputString.question('Enter a verb: ');
+//     let adjective = inputString.question('Enter an adjective: ');
+//     let adverb = inputString.question('Enter an adverb: ');
+
+
+//     console.log(`The ${adjective + ' '+ noun +' '+ verb} ${adverb}`);
+// };
+
+// madLibs();
+
+// 6. Double Doubles - A double number is an even-length number whose left-side digits are exactly the same 
+//as its right-side digits. For example, 44, 3333, 103103, and 7676 are all double numbers, 
+//whereas 444, 334433, and 107 are not.
+// Write a function that returns the number provided as an argument multiplied by two, unless the argument 
+//is a double number; otherwise, return the double number as-is.
+// Examples:
+// twice(37);          // 74
+// twice(44);          // 44
+// twice(334433);      // 668866
+// twice(444);         // 888
+// twice(107);         // 214
+
+
+// let twice = function (doubleInput){
+//     if (doubleInput.substring(0,doubleInput.)){
+
+//     }
+// }
